@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full {
+    width: 500px;
+    height: 400px;
+}
+body {
+    background-image: url(https://images.wallpaperscraft.ru/image/single/les_tuman_temnota_183926_1280x720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Home page */
+.home--page {
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat;
+}
+.gif {
+   position: relative;
+   left: -500px;
+   top: 5px;
+   max-width: 100%;
+    width: 50px;
+    height: 50px;
+   border-radius: 50%;
+}
+/* home-content */
+.home-content {
+    margin: 50px;
+}
+.home-title {
+    display: flex;
+    justify-content: center;
+}
+.home-title h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+
+}
+/* Navbar */
+.navMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(32, 31, 31, 0.726);
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+
+    animation: rende 1.5s ease-in-out infinite;
+}
+@keyframes rende {
+    0% {
+        box-shadow: 0 0 30px rgb(255, 255, 255);
+    }
+    50% {
+        box-shadow: 0 0 30px rgb(142, 0, 142);
+    }
+    100% {
+        box-shadow: 0 0 30px rgb(255, 255, 255);
+    }
+}
+.nav-ul {
+    display: flex;
+}
+.nav-ul li {
+    margin: 20px;
+    list-style-type: none;
+}
+.nav-ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+    transition: .4s;
+}
+.nav-ul li a:hover {
+    color: rgb(87, 2, 98);
+    border-bottom: 1px solid rgb(87, 2, 98);
+}
+
+.about-title h1 {
+    margin: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900; 
+}
+.about-title {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: -500px;
+    left: -100px
+}
+.img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -140px;
+    left: 50px;
+}
+.box {
+    margin: 50px;
+    position: relative;
+    top: -200px;
+    background-color: rgba(51, 2, 82, 0.708);
+    width: 400px;
+    height: 500px;
+    border: solid 3px rgb(94, 94, 94);
+    border-radius: 10px;
+    transition-duration: .5s;
+    transition: 0.5s ease;
+
+}
+.box:hover {
+    background-color: rgba(51, 2, 82, 0.708);
+    box-shadow: 0 0 40px rgb(101, 0, 163);
+    transform: scale(1.05);
+    animation: render 1.5s ease-in-out infinite;
+}
+.home-img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0);
+}
+.crug {
+    background-color: rgba(240, 248, 255, 0);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: solid 10px rgb(0, 76, 114);
+    position: relative;
+    top: 330px;
+    left: 120px;
+}
+.crug h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50px;
+}
+ .icon {
+    margin: 20px;
+    width: 100px;
+    display: flow-root;
+}
+.contacts h2 {
+    color: white;
+    position: relative;
+    top: -100px;
+    left: 120px;
+}
+
+
+@keyframes render {
+    0% {
+        border: solid 6px rgb(0, 0, 0);
+    }
+    25% {
+        border: solid 6px rgb(255, 255, 255);
+    }
+    50% {
+        border: solid 6px black;
+    }
+    75%{
+       border: solid 6px  rgb(255, 255, 255); 
+    }
+    100% {
+        border: solid 6px rgb(0, 0, 0);
+    }
+}
+.about {
+    color: white;
+    position: relative;
+    top: 200px;
+}
